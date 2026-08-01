@@ -140,9 +140,9 @@ const Hero = () => {
             {/* subtle framed border */}
             <div className="rounded-3xl p-1 bg-white/60 dark:bg-black/30 relative">
               <img
-                src="/harsh.png"
+                src="/profile.jpg"
                 alt="Harsh Upadhyay"
-                className="w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[16/10] max-h-[500px] object-cover object-center rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[4/5] sm:aspect-[4/4] md:aspect-[4/5] max-h-[550px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-105"
               />
               {/* Vignette effect overlay - dark mode only */}
               <div 
