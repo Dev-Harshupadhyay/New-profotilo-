@@ -142,7 +142,7 @@ const Hero = () => {
               <img
                 src="/harsh.png"
                 alt="Harsh Upadhyay"
-                className="w-full aspect-[3/4] sm:aspect-[9/16] max-h-[650px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[16/10] max-h-[500px] object-cover object-center rounded-2xl transition-transform duration-500 group-hover:scale-105"
               />
               {/* Vignette effect overlay - dark mode only */}
               <div 
@@ -165,10 +165,10 @@ const Hero = () => {
             </div>
 
             {/* bottom overlay */}
-            <div className="absolute bottom-4 left-4 right-4  rounded-2xl p-6 text-white  border-white/10 ">
-              <p className="text-s uppercase tracking-wider mb-2 text-white/80">Available for work</p>
-              <p className="text-lg font-semibold">Let's collaborate on a project!</p>
-                <p className="text-xs sm:text-xs text-white/60 mt-3">|| ॐ नमः शिवाय ||</p>
+            <div className="absolute bottom-4 left-4 right-4 rounded-2xl p-6 text-white border-white/10 bg-black/40 backdrop-blur-md">
+              <p className="text-xs uppercase tracking-wider mb-1 text-white/80">Available for work</p>
+              <p className="text-base sm:text-lg font-semibold">Let's collaborate on a project!</p>
+              <p className="text-xs text-white/60 mt-2">|| ॐ नमः शिवाय ||</p>
             </div>
           </div>
         </div>
