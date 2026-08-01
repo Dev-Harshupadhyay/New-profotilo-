@@ -15,18 +15,10 @@ export const preloadImages = async (imagePaths: string[]): Promise<void> => {
   }
 };
 
-// Extract thumbnail images from projects data
+// Extract thumbnail images from projects data (Updated for Cinevood, Tarzau, Climatek & others)
 export const getProjectThumbnails = (): string[] => {
   return [
-    "/projects/5.png",      // Brain Tumor Detector
-    "/projects/66.png",     // AI-RoadIntelligence  
-    "/projects/2.png",      // RoomsOnRent
-    "/projects/6.png",      // Dot Ignorer
-    "/projects/Dot-ignorer.png", // Another Dot Ignorer variant
-    "/projects/4.png",      // Additional project images
-    "/projects/3.png",      
-    "/projects/66a.png",
-    "/projects/a4.png",
-    "/projects/a5.png"
-  ];
-};
+    "/projects/cinevood.png",     // Cinevood (https://cinenvood.onrender.com)
+    "/projects/tarzau.png",       // Tarzau (https://tarzau.netlify.app)
+    "/projects/climatek.png",     // Climatek (https://climatek.netlify.app)
+    
