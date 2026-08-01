@@ -142,7 +142,7 @@ const Hero = () => {
               <img
                 src="/harsh.png"
                 alt="Harsh Upadhyay"
-                className="w-full h-[420px] sm:h-[500px] md:h-[550px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[3/4] sm:aspect-[9/16] max-h-[650px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-105"
               />
               {/* Vignette effect overlay - dark mode only */}
               <div 
