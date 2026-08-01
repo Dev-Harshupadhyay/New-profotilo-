@@ -21,4 +21,5 @@ export const getProjectThumbnails = (): string[] => {
     "/projects/cinevood.png",     // Cinevood (https://cinenvood.onrender.com)
     "/projects/tarzau.png",       // Tarzau (https://tarzau.netlify.app)
     "/projects/climatek.png",     // Climatek (https://climatek.netlify.app)
-    
+  ];                              // <-- Yeh bracket aur semicolon zaroori hai bhai!
+};
