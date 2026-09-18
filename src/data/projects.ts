@@ -38,8 +38,8 @@ export const projectsData: Project[] = [
       "A movie discovery and browsing web app for exploring films with a clean, fast interface.",
     fullDescription:
       "Cinevood is a full-stack movie discovery platform that lets users browse and explore movies through a clean, responsive interface. Built as a hands-on project to practice full-stack architecture — from API-driven data fetching to a polished, fast-loading front end — it's deployed live and continuously being improved.",
-    image: "/projects/cinveood.png",      // <-- yahan /projects/ add kiya
-    images: ["/projects/cinveood.png"],   // <-- yahan bhi
+    image: "/projects/cinveood.webp",      // <-- yahan /projects/ add kiya
+    images: ["/projects/cinveood.webp"],   // <-- yahan bhi
     tags: ["React", "Node.js", "Express", "MongoDB"],
     techStack: ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS"],
     category: "web",
@@ -82,8 +82,8 @@ export const projectsData: Project[] = [
       "A handy calculator/utility web app named after the Hindi word for a weighing scale.",
     fullDescription:
       "Tarazu is a lightweight utility web app designed to make everyday calculations quick and simple. Built with a focus on a clean, distraction-free UI, it's one of the earliest full projects built while learning the fundamentals of front-end and full-stack development.",
-    image: "/projects/tarazu.png",      // <-- /projects/ add kiya (aur spelling check kar li)
-    images: ["/projects/tarazu.png"],   // <-- yahan bhi
+    image: "/projects/tarazu.webp",      // <-- /projects/ add kiya (aur spelling check kar li)
+    images: ["/projects/tarazu.webp"],   // <-- yahan bhi
     tags: ["React", "JavaScript", "TailwindCSS"],
     techStack: ["React", "JavaScript", "TailwindCSS"],
     category: "web",
@@ -122,8 +122,8 @@ export const projectsData: Project[] = [
       "A real-time weather intelligence dashboard with forecasts, UV index, and air quality data.",
     fullDescription:
       "ClimaTek (Atmosphera) is a weather intelligence dashboard that presents real-time weather data — including forecasts, UV index, and air quality — in a clean, easy-to-read interface. It was built to practice working with third-party APIs and presenting live data in a visually engaging way.",
-    image: "/projects/climatek.png",      // <-- /projects/ add kiya
-    images: ["/projects/climatek.png"],   // <-- yahan bhi
+    image: "/projects/climatek.webp",      // <-- /projects/ add kiya
+    images: ["/projects/climatek.webp"],   // <-- yahan bhi
     tags: ["React", "API Integration", "TailwindCSS"],
     techStack: ["React", "JavaScript", "Weather API", "TailwindCSS"],
     category: "web",

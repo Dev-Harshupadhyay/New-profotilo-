@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://new-profotilo-flame.vercel.app/sitemap.xml

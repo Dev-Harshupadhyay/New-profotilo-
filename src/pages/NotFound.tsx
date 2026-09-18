@@ -53,6 +53,7 @@ const NotFound = () => {
 
   useEffect(() => {
     // 404 page accessed
+    document.title = "Page not found | Harsh Upadhyay";
   }, [location.pathname]);
 
   return (
