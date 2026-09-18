@@ -156,7 +156,7 @@ const MobileCommandDialog: React.FC<MobileCommandDialogProps> = ({ open, onOpenC
                 }
               }}
               aria-label="Close"
-              className="absolute right-2 top-2 rounded-md p-1 opacity-80 hover:opacity-100 z-10"
+              className="absolute right-2 top-2 rounded-full p-1 hover:bg-black/5 dark:hover:bg-white/10 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               <X className="h-4 w-4" />
               <span className="sr-only">Close</span>

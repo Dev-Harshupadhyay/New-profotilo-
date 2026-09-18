@@ -89,12 +89,12 @@ const Hero = () => {
           <div className="inline-block">
             {isNarrow ? (
               <div className="marquee" aria-hidden>
-                <div className="marquee__inner bg-black text-white px-6 py-2 rounded-full text-sm font-medium uppercase tracking-wide">
+                <div className="marquee__inner bg-black text-white px-6 py-2 rounded-full text-sm font-medium">
                   <span>Full Stack Web Developer</span>
                 </div>
               </div>
             ) : (
-              <span className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium uppercase tracking-wide">
+              <span className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium">
                 Full Stack Web Developer
               </span>
             )}
@@ -110,8 +110,8 @@ const Hero = () => {
 
           <div className="flex flex-wrap gap-4">
             <Button 
-              size="lg" 
-              className="rounded-full gap-2 px-8 py-6 text-base font-medium"
+              variant="pill"
+              size="pill-lg"
               onClick={() => {
                 const projectsSection = document.getElementById('projects');
                 if (projectsSection) {
@@ -123,9 +123,8 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full gap-2 px-8 py-6 text-base font-medium border-2 border-black dark:border-white hover:bg-black hover:text-white hover:border-white dark:hover:bg-white dark:hover:text-black dark:hover:border-black"
+              variant="pill-outline"
+              size="pill-lg"
               onClick={() => window.open('https://drive.google.com/file/d/1M47X-gCa-cjSFUMKYzSWb88e1cY5xAkn/view?usp=drivesdk', '_blank')}
             >
               View Resume
@@ -168,7 +167,7 @@ const Hero = () => {
 
             {/* bottom overlay */}
             <div className="absolute bottom-4 left-4 right-4 rounded-2xl p-6 text-white border-white/10 bg-black/40 backdrop-blur-md">
-              <p className="text-xs uppercase tracking-wider mb-1 text-white/80">Available for work</p>
+              <p className="text-xs mb-1 text-white/80">Available for work</p>
               <p className="text-base sm:text-lg font-semibold">Let's collaborate on a project!</p>
               <p className="text-xs text-white/60 mt-2">|| ॐ नमः शिवाय ||</p>
             </div>

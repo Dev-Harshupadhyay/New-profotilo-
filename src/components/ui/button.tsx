@@ -15,12 +15,35 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        /*
+         * Site button system (usability audit — consolidated to 5 visual styles):
+         * pill        → primary solid CTA pill
+         * pill-outline→ bordered CTA pill (inverts on hover)
+         * pill-soft   → subtle secondary pill
+         * glass       → translucent pill for dark surfaces / media overlays
+         * glass-dark  → translucent circular control for overlays on media
+         * quiet       → borderless circular icon button for in-page controls
+         */
+        pill: "rounded-full bg-foreground text-background hover:bg-foreground/90",
+        "pill-outline":
+          "rounded-full border-2 border-black dark:border-white bg-transparent hover:bg-black hover:text-white hover:border-white dark:hover:bg-white dark:hover:text-black dark:hover:border-black",
+        "pill-soft": "rounded-full bg-secondary text-foreground hover:bg-secondary/80",
+        glass:
+          "rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-md hover:bg-white/20",
+        "glass-dark":
+          "rounded-full bg-black/40 text-white backdrop-blur-md hover:bg-black/60",
+        quiet: "rounded-full hover:bg-black/5 dark:hover:bg-white/10",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        /* Site sizes */
+        "pill-sm": "h-auto rounded-full px-6 py-2.5 text-sm",
+        "pill-lg": "h-auto rounded-full px-8 py-6 text-base",
+        "icon-sm": "h-8 w-8 rounded-full p-0",
+        "icon-lg": "h-10 w-10 rounded-full p-0",
       },
     },
     defaultVariants: {

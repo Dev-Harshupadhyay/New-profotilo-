@@ -73,7 +73,7 @@ const Projects = () => {
             <div className="inline-flex items-center bg-gray-100/80 dark:bg-gray-800/50 backdrop-blur-sm rounded-full p-1.5 border border-gray-200/60 dark:border-gray-700/30 shadow-sm min-w-max">
             <button
               onClick={() => setFilter("all")}
-              className={`px-4 sm:px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+              className={`px-4 sm:px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                 filter === "all"
                   ? "bg-foreground text-background shadow-sm"
                   : "text-muted-foreground hover:text-foreground hover:bg-white/60 dark:hover:bg-gray-700/50"
@@ -83,7 +83,7 @@ const Projects = () => {
             </button>
             <button
               onClick={() => setFilter("web")}
-              className={`px-4 sm:px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+              className={`px-4 sm:px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                 filter === "web"
                   ? "bg-foreground text-background shadow-sm"
                   : "text-muted-foreground hover:text-foreground hover:bg-white/60 dark:hover:bg-gray-700/50"
@@ -164,7 +164,7 @@ const Projects = () => {
                       e.stopPropagation();
                       openProject(project);
                     }}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:gap-3 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
                   >
                     View Project
                     <ExternalLink className="w-4 h-4" />
@@ -178,20 +178,21 @@ const Projects = () => {
         {/* Show more */}
         {canShowMore && (
           <div className="mt-10 flex justify-center">
-            <button
+            <Button
               type="button"
+              variant="pill-soft"
+              size="pill-sm"
               onMouseEnter={() => preloadOnce(nextBatch.map((p) => p.image))}
               onFocus={() => preloadOnce(nextBatch.map((p) => p.image))}
               onTouchStart={() => preloadOnce(nextBatch.map((p) => p.image))}
               onClick={() =>
                 setVisibleCount((c) => Math.min(c + pageSize, displayedProjects.length))
               }
-              className="inline-flex items-center gap-2 rounded-full bg-secondary px-6 py-3 text-sm font-medium text-foreground hover:bg-secondary/80 transition-colors"
               aria-label="Show more projects"
             >
               Show more
               <ChevronDown className="h-4 w-4" />
-            </button>
+            </Button>
           </div>
         )}
       </div>

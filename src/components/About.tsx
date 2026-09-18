@@ -68,7 +68,7 @@ const About = () => {
             <div className="space-y-8">
               {/* Software & Full-Stack Development */}
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
+                <h4 className="text-sm text-muted-foreground mb-4">
                   Software & Full-Stack Development
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -85,7 +85,7 @@ const About = () => {
 
               {/* Currently Learning */}
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
+                <h4 className="text-sm text-muted-foreground mb-4">
                   Currently Learning
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -102,7 +102,7 @@ const About = () => {
 
               {/* Developer Tools & Ecosystem */}
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
+                <h4 className="text-sm text-muted-foreground mb-4">
                   Developer Tools & Ecosystem
                 </h4>
                 <div className="flex flex-wrap gap-2">

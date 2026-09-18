@@ -107,9 +107,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
                 <div className="flex flex-wrap gap-2">
                   {project.githubUrl && (
                     <Button
-                      size="sm"
-                      variant="secondary"
-                      className="rounded-full gap-2 bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 whitespace-nowrap"
+                      size="pill-sm"
+                      variant="glass"
                       asChild
                     >
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -120,9 +119,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
                   )}
                   {project.liveUrl && (
                     <Button
-                      size="sm"
-                      variant="secondary"
-                      className="rounded-full gap-2 bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 whitespace-nowrap"
+                      size="pill-sm"
+                      variant="glass"
                       asChild
                     >
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -137,27 +135,31 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
               {/* Carousel Controls */}
               {images.length > 1 && (
                 <>
-                  <button
+                  <Button
                     onClick={prevImage}
-                    className="absolute left-2 top-[40%] -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors z-20"
+                    variant="glass-dark"
+                    size="icon-sm"
+                    className="absolute left-2 top-[40%] -translate-y-1/2 z-20 [&_svg]:size-5"
                     aria-label="Previous image"
                   >
                     <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     onClick={nextImage}
-                    className="absolute right-2 top-[40%] -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors z-20"
+                    variant="glass-dark"
+                    size="icon-sm"
+                    className="absolute right-2 top-[40%] -translate-y-1/2 z-20 [&_svg]:size-5"
                     aria-label="Next image"
                   >
                     <ChevronRight className="w-5 h-5" />
-                  </button>
+                  </Button>
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
                     {images.map((_, idx) => (
                       <button
                         key={idx}
                         onClick={() => setCurrentImageIndex(idx)}
                         className={cn(
-                          "w-1.5 h-1.5 rounded-full transition-all",
+                          "w-1.5 h-1.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                           idx === currentImageIndex
                             ? "bg-white w-4"
                             : "bg-white/50"
@@ -304,9 +306,9 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
           {/* Close Button */}
           <Button
             onClick={onClose}
-            size="icon"
-            variant="ghost"
-            className="absolute right-4 top-4 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm z-[200]"
+            size="icon-sm"
+            variant="glass-dark"
+            className="absolute right-4 top-4 z-[200]"
           >
             <X className="w-4 h-4" />
           </Button>
@@ -332,9 +334,9 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
         {/* Close Button - Fixed */}
         <Button
           onClick={onClose}
-          size="icon"
-          variant="ghost"
-          className="absolute right-6 top-6 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md text-white hover:bg-black/60 z-[200]"
+          size="icon-lg"
+          variant="glass-dark"
+          className="absolute right-6 top-6 z-[200] [&_svg]:size-5"
         >
           <X className="w-5 h-5" />
         </Button>
@@ -360,8 +362,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
               <div className="absolute bottom-6 right-8 flex gap-3">
                 {project.githubUrl && (
                   <Button
-                    variant="secondary"
-                    className="rounded-full gap-2 bg-white/10 backdrop-blur-md text-white border-white/20 hover:bg-white/20"
+                    variant="glass"
+                    size="pill-sm"
                     asChild
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -372,8 +374,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
                 )}
                 {project.liveUrl && (
                   <Button
-                    variant="secondary"
-                    className="rounded-full gap-2 bg-white/10 backdrop-blur-md text-white border-white/20 hover:bg-white/20"
+                    variant="glass"
+                    size="pill-sm"
                     asChild
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -387,27 +389,31 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
               {/* Carousel Controls */}
               {images.length > 1 && (
                 <>
-                  <button
+                  <Button
                     onClick={prevImage}
-                    className="absolute left-4 top-[45%] -translate-y-1/2 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/60 transition-colors z-20"
+                    variant="glass-dark"
+                    size="icon-lg"
+                    className="absolute left-4 top-[45%] -translate-y-1/2 z-20 [&_svg]:size-6"
                     aria-label="Previous image"
                   >
                     <ChevronLeft className="w-6 h-6" />
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     onClick={nextImage}
-                    className="absolute right-4 top-[45%] -translate-y-1/2 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/60 transition-colors z-20"
+                    variant="glass-dark"
+                    size="icon-lg"
+                    className="absolute right-4 top-[45%] -translate-y-1/2 z-20 [&_svg]:size-6"
                     aria-label="Next image"
                   >
                     <ChevronRight className="w-6 h-6" />
-                  </button>
+                  </Button>
                   <div className="absolute bottom-[80px] left-1/2 -translate-x-1/2 flex gap-2">
                     {images.map((_, idx) => (
                       <button
                         key={idx}
                         onClick={() => setCurrentImageIndex(idx)}
                         className={cn(
-                          "w-2 h-2 rounded-full transition-all",
+                          "w-2 h-2 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                           idx === currentImageIndex
                             ? "bg-white w-6"
                             : "bg-white/60 hover:bg-white/80"

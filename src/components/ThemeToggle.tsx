@@ -17,10 +17,10 @@ const ThemeToggle = () => {
 
   return (
     <Button
-      variant="ghost"
-      size="icon"
+      variant="quiet"
+      size="icon-lg"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="rounded-full w-10 h-10 hover:bg-black/5 dark:hover:bg-white/10 transition-all group"
+      className="[&_svg]:size-5 transition-all group"
     >
       {theme === "dark" ? (
         <Sun className="h-5 w-5 transition-all duration-300 rotate-0 text-foreground/70 group-hover:text-foreground" />

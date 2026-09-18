@@ -68,7 +68,7 @@ const MobileFAB: React.FC = () => {
         aria-label="Open command palette"
         onClick={handleClick}
         id="mobile-fab"
-        className="fixed bottom-6 right-4 md:bottom-8 md:right-8 z-40 w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform transition-all duration-300 overflow-hidden p-0 group"
+        className="fixed bottom-6 right-4 md:bottom-8 md:right-8 z-40 w-14 h-14 rounded-full bg-accent text-accent-foreground shadow-lg hover:scale-105 transform transition-all duration-300 overflow-hidden p-0 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         style={{
           transform: `translate(${mousePosition.x}px, ${mousePosition.y}px) scale(1)`,
           animation: showGlow ? 'fabGlow 3s ease-in-out' : 'none'

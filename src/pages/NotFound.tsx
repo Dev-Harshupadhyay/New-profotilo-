@@ -103,18 +103,17 @@ const NotFound = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Link to="/">
-            <Button size="lg" className="rounded-full gap-2 px-8 py-6 text-base font-medium">
+          <Button asChild variant="pill" size="pill-lg">
+            <Link to="/">
               <Home className="w-5 h-5" />
               Return Home
               <ArrowRight className="w-5 h-5" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <Button 
-            size="lg" 
-            variant="outline" 
+            variant="pill-outline" 
+            size="pill-lg"
             onClick={handleExploreProjects}
-            className="rounded-full gap-2 px-8 py-6 text-base font-medium border-2 border-black dark:border-white hover:bg-black hover:text-white hover:border-white dark:hover:bg-white dark:hover:text-black"
           >
             Explore Projects
           </Button>

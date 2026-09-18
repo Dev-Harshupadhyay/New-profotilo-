@@ -28,7 +28,7 @@ const ScrollToTop = () => {
         <button
           onClick={handleClick}
           aria-label="Open command palette"
-          className="fixed bottom-8 right-8 z-40 w-14 h-14 rounded-full shadow-2xl hidden sm:block bg-accent text-accent-foreground hover:scale-105 transform transition overflow-hidden p-0"
+          className="fixed bottom-8 right-8 z-40 w-14 h-14 rounded-full shadow-lg hidden sm:block bg-accent text-accent-foreground hover:scale-105 transform transition-all duration-300 overflow-hidden p-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <div className="w-full h-full flex items-center justify-center">
             <img 

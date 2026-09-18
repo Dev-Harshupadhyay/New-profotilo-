@@ -83,8 +83,9 @@ const Footer = () => {
               </a>
               <Button
                 onClick={scrollToTop}
-                variant="outline"
-                className="w-full rounded-full bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 transition-all"
+                variant="glass"
+                size="pill-sm"
+                className="w-full"
               >
                 Back to top
               </Button>

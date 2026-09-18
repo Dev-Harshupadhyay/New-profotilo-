@@ -219,16 +219,16 @@ const Navbar = () => {
                 </a>
               ))}
               <ThemeToggle />
-              <a
-                href="https://tally.so/r/QKpNqX"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="rounded-full gap-2 px-6 py-2.5 text-sm font-medium bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 ml-2">
+              <Button asChild variant="pill" size="pill-sm" className="ml-2">
+                <a
+                  href="https://tally.so/r/QKpNqX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Let's talk
                   <ArrowRight className="w-4 h-4" />
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
 
             {/* Mobile */}
@@ -239,7 +239,9 @@ const Navbar = () => {
                   <Button
                     type="button"
                     aria-label="Open menu"
-                    className="relative flex items-center justify-center w-10 h-10 rounded-full bg-foreground hover:bg-foreground/90 text-background shadow-md"
+                    variant="quiet"
+                    size="icon-lg"
+                    className="[&_svg]:size-5"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   >
                     <Menu className="h-5 w-5" />
@@ -272,7 +274,9 @@ const Navbar = () => {
                       <Button
                         type="button"
                         onClick={closeMenu}
-                        className="absolute right-4 top-4 w-8 h-8 rounded-full bg-foreground/10 hover:bg-foreground/20 border border-foreground/20 flex items-center justify-center p-0 z-10"
+                        variant="quiet"
+                        size="icon-sm"
+                        className="absolute right-4 top-4 z-10 [&_svg]:size-5"
                       >
                         <X className="h-5 w-5 text-foreground" />
                         <span className="sr-only">Close</span>
@@ -301,18 +305,17 @@ const Navbar = () => {
                               {link.name}
                             </a>
                           ))}
-                          <a
-                            href="https://tally.so/r/QKpNqX"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={closeMenu}
-                            className="mt-4 w-full"
-                          >
-                            <Button className="w-full rounded-full gap-2 px-6 py-6 text-base font-medium bg-foreground text-background hover:bg-foreground/90">
+                          <Button asChild variant="pill" size="pill-lg" className="mt-4 w-full">
+                            <a
+                              href="https://tally.so/r/QKpNqX"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={closeMenu}
+                            >
                               Let's talk
                               <ArrowRight className="w-4 h-4" />
-                            </Button>
-                          </a>
+                            </a>
+                          </Button>
                         </nav>
                       </div>
                     </div>
