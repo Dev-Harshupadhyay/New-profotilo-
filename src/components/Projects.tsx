@@ -124,7 +124,9 @@ const Projects = () => {
                 )}
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} project by Harsh Upadhyay`}
+                  width={1200}
+                  height={675}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-64 object-contain group-hover:scale-110 transition-transform duration-300 bg-gray-100 dark:bg-gray-800"

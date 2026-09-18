@@ -1,0 +1,16 @@
+{
+  "name": "Harsh Upadhyay | Full Stack Web Developer",
+  "short_name": "Harsh Upadhyay",
+  "description": "Portfolio of Harsh Upadhyay, a full stack web developer building responsive web applications with React, Node.js and modern web technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#171c26",
+  "background_color": "#f8f9fc",
+  "icons": [
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

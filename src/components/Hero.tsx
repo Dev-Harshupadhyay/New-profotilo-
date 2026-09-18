@@ -53,7 +53,7 @@ const Hero = () => {
   }, [isMobile]);
   
   return (
-    <section ref={heroRef} className="min-h-[85vh] bg-background relative overflow-hidden pt-24 pb-16">
+    <section id="hero" ref={heroRef} className="min-h-[85vh] bg-background relative overflow-hidden pt-24 pb-16">
       {/* Decorative floating elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -101,7 +101,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Building clean, modern web experiences from the ground up
+            Harsh Upadhyay — Full Stack Web Developer
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-lg">

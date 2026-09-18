@@ -36,7 +36,7 @@ const FAQ = () => {
     <section id="faq" ref={faqRef} className="py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <div className={`text-center mb-16 ${faqVisible ? 'scroll-animate' : ''}`}>
-          <p className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
+          <p className="text-sm tracking-wider text-muted-foreground mb-4">
             Questions & Answers
           </p>
           <h2 className="text-5xl font-bold">Frequently Asked Questions</h2>
