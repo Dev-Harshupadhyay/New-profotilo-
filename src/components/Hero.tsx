@@ -140,7 +140,7 @@ const Hero = () => {
             <div className="rounded-3xl p-1 bg-white/60 dark:bg-black/30 relative">
             <img
   src="/profile.webp"
-  alt="Harsh Upadhyay"
+  alt="Harsh Upadhyay, full stack web developer"
   width={900}
   height={1000}
   decoding="async"
